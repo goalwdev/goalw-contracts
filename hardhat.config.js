@@ -46,7 +46,7 @@ module.exports = {
       accounts: mnemonic !== undefined ?
         { mnemonic: mnemonic }
         : privateKeys.map((privateKey) => {
-          return {privateKey: privateKey}
+          return {privateKey: privateKey, balance: "1000000000000000000000000"}
         }),
       allowUnlimitedContractSize: true
     },
